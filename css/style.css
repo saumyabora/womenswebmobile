@@ -247,13 +247,10 @@ img:nth-of-type(2n):hover {
 
   /** Code for prefers reduced motion **/
 
-  @media (prefers-reduced-motion) {
+  @media (prefers-reduced-motion: reduce) {
   
     /*Turn off animation*/
-    * {
-        -webkit-transition: none !important;
-        -moz-transition: none !important;
-        -o-transition: none !important;
-        transition: none !important;
+    img:hover {
+        animation: none;
       }
    }
